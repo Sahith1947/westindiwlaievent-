@@ -48,7 +48,7 @@ export const EVENT_DETAILS = {
   tagline: 'Celebrate the Festival of Lights with Tradition, Culture, Food & Togetherness.',
   
   // Schedule & Venue essentials
-  reportingTime: '5:30 PM',
+  reportingTime: '4:30 PM',
   dressCode: 'Traditional Wear (Ethnic Kurta / Saree / Anarkali)',
   venue: 'Westin College Main Campus, Vijayawada',
   dateFormatted: 'Grand Diwali Festive Eve',
@@ -329,7 +329,7 @@ export const STALL_BOOKING_CONTACT = {
 // -----------------------------------------------------------------------------
 export const EVENT_SCHEDULE: ScheduleItem[] = [
   {
-    time: '5:30 PM',
+    time: '4:30 PM',
     title: 'Reporting & Assembly',
     description: 'Warm festive welcome of students, faculty, and honoured guests. Traditional tilak ceremony, badge collection, and entry to the illuminated campus ground.',
     iconName: 'Users',

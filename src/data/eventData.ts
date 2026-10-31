@@ -61,7 +61,7 @@ export const EVENT_CONFIG = {
   instagramHandle: "@westin_college_vijayawada",
   
   // Event Key Details
-  reportingTime: "5:30 PM",
+  reportingTime: "4:30 PM",
   dressCode: "Traditional Wear",
   eventDate: "Diwali Festive Evening",
   venue: "Westin College Campus, Bharathi Nagar, Vijayawada",
@@ -87,7 +87,7 @@ export const EVENT_CONFIG = {
     phone: "+91 866 247 1144",
     email: "admissions@westin.ac.in",
     website: "https://westin.ac.in",
-    timings: "Event Doors Open: 5:30 PM Onwards",
+    timings: "Event Doors Open: 4:30 PM Onwards",
   }
 };
 
@@ -310,7 +310,7 @@ export const FOOD_STALLS: FoodStall[] = [
  */
 export const EVENT_SCHEDULE: ScheduleItem[] = [
   {
-    time: "5:30 PM",
+    time: "4:30 PM",
     activity: "Reporting & Assembly",
     description: "Welcome of students, faculty, and honoured guests. Collection of entry wristbands and festival gathering at the campus central quadrangle.",
     category: "ceremony",

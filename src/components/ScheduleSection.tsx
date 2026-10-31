@@ -103,7 +103,7 @@ export const ScheduleSection: React.FC = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-3 px-6 py-3 rounded-full bg-diwali-card/80 border border-diwali-gold/30 text-xs sm:text-sm text-diwali-cream/80 shadow-md">
             <Flame className="w-4 h-4 text-diwali-orange animate-pulse" />
-            <span>Reporting begins promptly at <strong className="text-diwali-gold">5:30 PM</strong>. Traditional attire is warmly encouraged!</span>
+            <span>Reporting begins promptly at <strong className="text-diwali-gold">4:30 PM</strong>. Traditional attire is warmly encouraged!</span>
           </div>
         </div>
 
