@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="flameGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1D5"/>
+      <stop offset="40%" stop-color="#FFD36A"/>
+      <stop offset="100%" stop-color="#F28C28"/>
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD36A"/>
+      <stop offset="60%" stop-color="#D4A034"/>
+      <stop offset="100%" stop-color="#690D2A"/>
+    </linearGradient>
+  </defs>
+  <!-- Glow -->
+  <circle cx="32" cy="22" r="16" fill="#F28C28" opacity="0.25" filter="blur(6px)"/>
+  <!-- Flame Outer -->
+  <path d="M32 6 C35 15, 41 21, 41 27 C41 33, 37 37, 32 37 C27 37, 23 33, 23 27 C23 21, 29 15, 32 6 Z" fill="url(#flameGrad)" />
+  <!-- Flame Core -->
+  <path d="M32 16 C33.5 21, 37 24, 37 28 C37 32, 34.5 34, 32 34 C29.5 34, 27 32, 27 28 C27 24, 30.5 21, 32 16 Z" fill="#FFF1D5" />
+  <!-- Diya Lamp Bowl -->
+  <path d="M12 37 C14 49, 23 55, 32 55 C41 55, 50 49, 52 37 C42 41, 22 41, 12 37 Z" fill="url(#bowlGrad)" stroke="#FFD36A" stroke-width="1.5" />
+  <!-- Rim Highlight -->
+  <ellipse cx="32" cy="38" rx="20" ry="3.5" fill="#FFD36A" opacity="0.6"/>
+  <!-- Base Stand -->
+  <path d="M26 54 C26 58, 38 58, 38 54 Z" fill="#D4A034"/>
+</svg>
