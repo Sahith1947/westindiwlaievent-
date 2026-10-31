@@ -7,7 +7,6 @@ import EntertainmentSection from './components/EntertainmentSection';
 import FoodFestivalSection from './components/FoodFestivalSection';
 import EntrepreneurshipSection from './components/EntrepreneurshipSection';
 import ScheduleSection from './components/ScheduleSection';
-import GallerySection from './components/GallerySection';
 import RegistrationCtaSection from './components/RegistrationCtaSection';
 import Footer from './components/Footer';
 import InstagramPopup from './components/InstagramPopup';
@@ -42,10 +41,7 @@ export const App: React.FC = () => {
         {/* Section 7 — Event Schedule Timeline */}
         <ScheduleSection />
 
-        {/* Section 8 — Photo Gallery & Instagram Showcase */}
-        <GallerySection />
-
-        {/* Section 9 — Final Registration CTA (Razorpay) */}
+        {/* Section 8 — Final Registration CTA (Razorpay) */}
         <RegistrationCtaSection />
       </main>
 

@@ -15,7 +15,6 @@ export const Footer: React.FC = () => {
     { name: 'Food Festival', href: '#food-festival' },
     { name: 'Student Stalls', href: '#student-market' },
     { name: 'Event Timeline', href: '#schedule' },
-    { name: 'Photo Gallery', href: '#gallery' },
   ];
 
   return (

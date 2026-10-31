@@ -21,7 +21,6 @@ export const Navbar: React.FC = () => {
     { name: 'Food Stalls', href: '#food-festival' },
     { name: 'Schedule', href: '#schedule' },
     { name: 'Student Stalls', href: '#student-market' },
-    { name: 'Gallery', href: '#gallery' },
   ];
 
   const handleLinkClick = () => {
