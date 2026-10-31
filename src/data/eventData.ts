@@ -127,7 +127,7 @@ export const FESTIVAL_ATTRACTIONS: Attraction[] = [
     title: "Chilaka Jyothishyam",
     subtitle: "Parrot Fortune Telling",
     description: "Step into an authentic cultural tradition and enjoy the charming traditional parrot astrology experience revealing festive fortunes.",
-    image: "/images/attraction-parrot.jpg",
+    image: "/images/attraction-parrot.png",
     badge: "Timeless Lore",
     category: "Tradition"
   },

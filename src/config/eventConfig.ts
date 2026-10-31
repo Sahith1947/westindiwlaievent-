@@ -97,7 +97,7 @@ export const ATTRACTIONS: Attraction[] = [
     title: 'Chilaka Jyothishyam',
     tagline: 'Ancient Mystic Lore',
     description: 'Enjoy the charming and popular traditional parrot astrology experience. Watch the revered fortune-teller bird pick your auspicious Diwali tarot card!',
-    image: 'https://images.unsplash.com/photo-1544943910-4c1dc44a0b38?auto=format&fit=crop&w=800&q=80',
+    image: '/images/attraction-parrot.png',
     category: 'Folk Tradition',
     badge: 'Crowd Favourite',
     highlightIcon: 'Eye',
