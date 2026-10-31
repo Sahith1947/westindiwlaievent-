@@ -1,7 +1,9 @@
 # Westin Diwali Celebrations — Event Website
 **Organised by Westin College of Hotel & Business Management, Vijayawada**
 
-A premium, visually captivating, fully responsive festival event website for **Westin Diwali Celebrations**. Built with React 18, TypeScript, and Tailwind CSS.
+🔗 **Live Production URL:** [https://westindiwlaievent.vercel.app](https://westindiwlaievent.vercel.app)  
+📦 **GitHub Repository:** [https://github.com/Sahith1947/westindiwlaievent-](https://github.com/Sahith1947/westindiwlaievent-)  
+💳 **Official Razorpay Registration Link:** [https://rzp.io/rzp/0u8FSXT](https://rzp.io/rzp/0u8FSXT)  
 
 ---
 
