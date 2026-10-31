@@ -78,7 +78,7 @@ export const AttractionsSection: React.FC = () => {
               Ready to Taste, Celebrate & Light Up the Night?
             </h4>
             <p className="text-xs sm:text-sm text-diwali-cream/80 max-w-xl">
-              From the 8 savory food stalls to the traditional Bommala Koluvu and parrot fortune telling, there is something magical for everyone.
+              From the savory food stalls to the traditional Bommala Koluvu and parrot fortune telling, there is something magical for everyone.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 w-full sm:w-auto">

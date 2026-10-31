@@ -97,11 +97,11 @@ export const EVENT_CONFIG = {
 export const FESTIVAL_ATTRACTIONS: Attraction[] = [
   {
     id: 1,
-    title: "Food Festival — 8 Food Stalls",
+    title: "Diwali Food Festival",
     subtitle: "A Festive Feast of Flavours",
     description: "Explore a delightful variety of authentic festive foods, street delights, sizzling delicacies, and rich traditional sweets crafted for celebration.",
     image: "/images/attraction-food.jpg",
-    badge: "8 Gourmet Stalls",
+    badge: "Food Stalls",
     category: "Culinary"
   },
   {
@@ -340,7 +340,7 @@ export const EVENT_SCHEDULE: ScheduleItem[] = [
   {
     time: "6:45 PM onwards",
     activity: "Food Courts Open — Diwali Food Festival",
-    description: "Official opening of all 8 gourmet food stalls, dessert stations, and student creator pop-ups. Savor an endless spread of festive delights.",
+    description: "Official opening of gourmet food stalls, dessert stations, and student creator pop-ups. Savor an endless spread of festive delights.",
     category: "food",
     icon: "UtensilsCrossed"
   },

@@ -40,7 +40,7 @@ export const RegistrationCtaSection: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-xs sm:text-sm text-diwali-cream/80 mb-8 sm:mb-10 px-2">
           <div className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-diwali-gold shrink-0" />
-            <span>8 Signature Food Stalls</span>
+            <span>Signature Food Stalls</span>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle2 className="w-4 h-4 text-diwali-gold shrink-0" />

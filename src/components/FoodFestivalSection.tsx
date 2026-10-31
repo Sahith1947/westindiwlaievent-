@@ -12,9 +12,17 @@ export const FoodFestivalSection: React.FC = () => {
         
         <SectionTitle
           badge="Diwali Food Festival"
-          title="8 SIGNATURE FOOD STALLS"
-          subtitle="Savor a royal spread of festive feasts, sizzling street chaat, slow-dum biryanis, hot tandoor grills, and sweet delicacies."
+          title="SIGNATURE FOOD STALLS"
+          subtitle="Savor a royal spread of festive feasts, sizzling street chaat, slow-dum biryanis, hot tandoor grills, and sweet delicacies. Official stalls will be announced soon!"
         />
+
+        {/* Announcement Pill */}
+        <div className="flex justify-center -mt-6 sm:-mt-8 mb-10">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-diwali-maroon/80 border border-diwali-gold/40 text-xs sm:text-sm font-semibold text-diwali-gold shadow-md backdrop-blur-sm">
+            <Sparkles className="w-4 h-4 text-diwali-orange animate-pulse shrink-0" />
+            <span>Official Stalls & Menus Will Be Announced Soon!</span>
+          </div>
+        </div>
 
         {/* 8 Stalls Grid — Responsive 1 col on mobile, 2 on tablet, 4 on desktop */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
@@ -96,9 +104,9 @@ export const FoodFestivalSection: React.FC = () => {
         </div>
 
         {/* Note regarding Stall details & menus */}
-        <div className="mt-12 text-center text-xs text-diwali-cream/60">
+        <div className="mt-12 text-center text-xs text-diwali-cream/70 max-w-xl mx-auto">
           <p>
-            * Stall names and festive menus shown are editable placeholders. Final menus and vendor allocations are coordinated by Westin College Food Festival Committee.
+            * Official food stalls and festive menu details will be announced soon by the Westin College Food Festival Committee.
           </p>
         </div>
 
