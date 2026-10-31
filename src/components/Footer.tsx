@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
     { name: 'Video Preview', href: '#video' },
     { name: 'Live Entertainment', href: '#entertainment' },
     { name: 'Food Festival', href: '#food-festival' },
-    { name: 'Student Stalls', href: '#student-market' },
+    { name: 'Student Crafts', href: '#student-market' },
     { name: 'Event Timeline', href: '#schedule' },
   ];
 
@@ -82,10 +82,10 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Event Coordination & Stalls */}
+          {/* Column 3: Event Coordination & Desk */}
           <div>
             <h4 className="text-xs uppercase font-serif font-bold tracking-widest text-diwali-gold mb-4 border-l-2 border-diwali-gold pl-2">
-              Student Stalls & Queries
+              Event Helpdesk & Queries
             </h4>
             <div className="space-y-3 text-xs text-diwali-cream/75">
               <p>
@@ -103,9 +103,6 @@ export const Footer: React.FC = () => {
                 <a href={`mailto:${EVENT_CONFIG.stallCoordination.email}`} className="hover:text-white">
                   {EVENT_CONFIG.stallCoordination.email}
                 </a>
-              </p>
-              <p className="text-[11px] text-diwali-orange">
-                * Stalls are allocated on first-come reservation basis.
               </p>
             </div>
           </div>

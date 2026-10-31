@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
     { name: 'Entertainment', href: '#entertainment' },
     { name: 'Food Stalls', href: '#food-festival' },
     { name: 'Schedule', href: '#schedule' },
-    { name: 'Student Stalls', href: '#student-market' },
+    { name: 'Student Crafts', href: '#student-market' },
   ];
 
   const handleLinkClick = () => {
