@@ -7,36 +7,21 @@ export const InstagramPopup: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if dismissed in this session
-    try {
-      const isDismissed = sessionStorage.getItem('westin_diwali_ig_popup_dismissed');
-      if (isDismissed) {
-        return;
-      }
-    } catch {
-      // In case sessionStorage is restricted
-    }
-
-    // Trigger 6 seconds after page load (within 5-7 seconds range)
+    // Forcefully show popup reliably 1.5 seconds after page load
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 6000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
   const handleDismiss = () => {
     setIsVisible(false);
-    try {
-      sessionStorage.setItem('westin_diwali_ig_popup_dismissed', 'true');
-    } catch {
-      // ignore
-    }
   };
 
   const handleFollowClick = () => {
     window.open(EVENT_CONFIG.instagramUrl, '_blank', 'noopener,noreferrer');
-    handleDismiss();
+    setIsVisible(false);
   };
 
   if (!isVisible) return null;
@@ -46,7 +31,7 @@ export const InstagramPopup: React.FC = () => {
       role="dialog"
       aria-modal="true"
       aria-labelledby="ig-popup-heading"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-in fade-in zoom-in-95 duration-300"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in zoom-in-95 duration-300"
     >
       <div className="relative w-full max-w-md rounded-3xl bg-gradient-to-br from-diwali-card via-diwali-maroon to-diwali-burgundy border-2 border-diwali-gold/50 p-6 sm:p-8 shadow-2xl shadow-diwali-maroon/80 text-center overflow-hidden">
         
