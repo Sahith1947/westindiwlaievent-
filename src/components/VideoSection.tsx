@@ -84,28 +84,28 @@ export const VideoSection: React.FC = () => {
               <div className="absolute inset-3 sm:inset-5 border border-diwali-gold/25 rounded-xl pointer-events-none" />
 
               {/* Play Button & Content */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-10">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-3 sm:p-6 text-center z-10">
                 
                 {/* Glowing Festive Play Button */}
                 <button
                   onClick={handlePlayClick}
-                  className="relative group/btn p-5 sm:p-7 rounded-full bg-gradient-to-tr from-diwali-orange to-diwali-gold text-diwali-dark shadow-2xl shadow-diwali-orange/60 hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-diwali-gold/50 cursor-pointer"
+                  className="relative group/btn p-3.5 sm:p-6 rounded-full bg-gradient-to-tr from-diwali-orange to-diwali-gold text-diwali-dark shadow-2xl shadow-diwali-orange/60 hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-diwali-gold/50 cursor-pointer"
                   aria-label="Play Introduction Video"
                 >
-                  <span className="absolute -inset-2 rounded-full bg-diwali-gold opacity-40 animate-ping pointer-events-none" />
-                  <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-diwali-dark text-diwali-dark translate-x-0.5" />
+                  <span className="absolute -inset-1.5 rounded-full bg-diwali-gold opacity-40 animate-ping pointer-events-none" />
+                  <Play className="w-6 h-6 sm:w-9 sm:h-9 fill-diwali-dark text-diwali-dark translate-x-0.5" />
                 </button>
 
                 {/* Video Info Titles */}
-                <div className="mt-5 max-w-md">
-                  <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-diwali-darker/80 border border-diwali-gold/40 text-[11px] font-bold text-diwali-gold uppercase tracking-wider mb-2">
-                    <Film className="w-3.5 h-3.5 text-diwali-orange" />
+                <div className="mt-2.5 sm:mt-5 max-w-md px-2">
+                  <span className="inline-flex items-center space-x-1.5 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-diwali-darker/90 border border-diwali-gold/40 text-[10px] sm:text-[11px] font-bold text-diwali-gold uppercase tracking-wider mb-1 sm:mb-2">
+                    <Film className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-diwali-orange" />
                     <span>Official Festival Teaser</span>
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-serif font-bold text-white tracking-wide">
+                  <h3 className="text-sm sm:text-2xl font-serif font-bold text-white tracking-wide leading-tight">
                     Relive the Magic of Diwali with Westin
                   </h3>
-                  <p className="text-xs sm:text-sm text-diwali-cream/80 mt-1">
+                  <p className="hidden sm:block text-xs sm:text-sm text-diwali-cream/80 mt-1">
                     Click to view highlights of students, rituals, dance & festivity
                   </p>
                 </div>
@@ -169,10 +169,7 @@ export const VideoSection: React.FC = () => {
           </div>
         )}
 
-        {/* Note on video editing */}
-        <p className="text-center text-xs text-diwali-cream/50 mt-4">
-          <span className="text-diwali-gold font-semibold">Tip for Organizers:</span> YouTube video URL can be added anytime in <code className="text-diwali-gold bg-diwali-card px-1.5 py-0.5 rounded text-[11px]">src/data/eventData.ts</code>
-        </p>
+
 
       </div>
     </section>

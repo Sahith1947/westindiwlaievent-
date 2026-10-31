@@ -24,7 +24,7 @@ export const RegistrationCtaSection: React.FC = () => {
         </div>
 
         {/* Heading — Strict PRD text */}
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-black tracking-tight text-gold-gradient uppercase drop-shadow-2xl leading-tight mb-6">
+        <h2 className="text-2xl sm:text-5xl lg:text-6xl font-serif font-black tracking-tight text-gold-gradient uppercase drop-shadow-2xl leading-tight mb-4 sm:mb-6">
           LIGHT UP YOUR DIWALI<br />
           <span className="text-white drop-shadow-[0_4px_25px_rgba(255,211,106,0.4)]">
             WITH WESTIN!
@@ -32,37 +32,37 @@ export const RegistrationCtaSection: React.FC = () => {
         </h2>
 
         {/* Supporting text — Strict PRD text */}
-        <p className="text-lg sm:text-xl text-diwali-cream/95 max-w-2xl mx-auto mb-10 leading-relaxed font-serif italic">
+        <p className="text-sm sm:text-xl text-diwali-cream/95 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed font-serif italic px-2">
           "Celebrate tradition, enjoy amazing food, experience music and create unforgettable memories with Westin."
         </p>
 
         {/* Quick Highlights checklist before booking */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-diwali-cream/80 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-xs sm:text-sm text-diwali-cream/80 mb-8 sm:mb-10 px-2">
           <div className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-diwali-gold" />
+            <CheckCircle2 className="w-4 h-4 text-diwali-gold shrink-0" />
             <span>8 Signature Food Stalls</span>
           </div>
           <div className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-diwali-gold" />
+            <CheckCircle2 className="w-4 h-4 text-diwali-gold shrink-0" />
             <span>Bommala Koluvu & Parrot Lore</span>
           </div>
           <div className="flex items-center space-x-2">
-            <CheckCircle2 className="w-4 h-4 text-diwali-gold" />
+            <CheckCircle2 className="w-4 h-4 text-diwali-gold shrink-0" />
             <span>Live Music & Grand Fireworks</span>
           </div>
         </div>
 
         {/* Prominent REGISTER NOW Button — Strict PRD Requirement */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
           <a
             href={EVENT_CONFIG.paymentUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-diwali-primary px-10 py-5 rounded-full text-lg sm:text-xl font-black tracking-widest flex items-center justify-center space-x-3 shadow-2xl hover:scale-105 transition-all w-full sm:w-auto"
+            className="btn-diwali-primary px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-xl font-black tracking-widest flex items-center justify-center space-x-2.5 sm:space-x-3 shadow-2xl hover:scale-105 transition-all w-full sm:w-auto"
           >
-            <Flame className="w-6 h-6 fill-diwali-dark" />
+            <Flame className="w-5 h-5 sm:w-6 sm:h-6 fill-diwali-dark" />
             <span>REGISTER NOW</span>
-            <ExternalLink className="w-5 h-5 ml-1" />
+            <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 ml-1" />
           </a>
         </div>
 

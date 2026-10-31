@@ -129,26 +129,26 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu Drawer */}
       {isOpen && (
-        <div className="sm:hidden bg-diwali-darker/98 border-b border-diwali-gold/30 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-xl animate-in slide-in-from-top-4 duration-200">
-          <div className="flex flex-col space-y-2">
+        <div className="sm:hidden bg-diwali-darker/98 border-b border-diwali-gold/30 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-xl animate-in slide-in-from-top-4 duration-200 max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+          <div className="flex flex-col space-y-1.5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={handleLinkClick}
-                className="px-3 py-2.5 rounded-lg text-sm font-medium text-diwali-cream/90 hover:text-diwali-gold hover:bg-diwali-maroon/40 border-l-2 border-transparent hover:border-diwali-gold transition-all"
+                className="px-3.5 py-3 rounded-xl text-sm font-medium text-diwali-cream/90 hover:text-diwali-gold hover:bg-diwali-maroon/40 border-l-2 border-transparent hover:border-diwali-gold transition-all active:bg-diwali-maroon/60"
               >
                 {link.name}
               </a>
             ))}
             
-            <div className="pt-3 border-t border-diwali-gold/20 flex flex-col space-y-3">
+            <div className="pt-3 border-t border-diwali-gold/20 flex flex-col space-y-2.5">
               <a
                 href={EVENT_CONFIG.paymentUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleLinkClick}
-                className="btn-diwali-primary w-full py-3 rounded-lg text-center text-sm font-bold flex items-center justify-center space-x-2"
+                className="btn-diwali-primary w-full py-3.5 rounded-xl text-center text-sm font-bold flex items-center justify-center space-x-2 shadow-lg"
               >
                 <Flame className="w-4 h-4 fill-diwali-dark" />
                 <span>REGISTER NOW (RAZORPAY)</span>
@@ -159,7 +159,7 @@ export const Navbar: React.FC = () => {
                 href={EVENT_CONFIG.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center space-x-2 py-2 rounded-lg text-xs text-diwali-gold hover:text-white transition-colors border border-diwali-gold/30 bg-diwali-maroon/20"
+                className="flex items-center justify-center space-x-2 py-2.5 rounded-xl text-xs text-diwali-gold hover:text-white transition-colors border border-diwali-gold/30 bg-diwali-maroon/20 font-medium"
               >
                 <Instagram className="w-4 h-4" />
                 <span>Follow {EVENT_CONFIG.instagramHandle}</span>

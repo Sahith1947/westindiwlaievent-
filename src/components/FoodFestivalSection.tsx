@@ -17,7 +17,7 @@ export const FoodFestivalSection: React.FC = () => {
         />
 
         {/* 8 Stalls Grid — Responsive 1 col on mobile, 2 on tablet, 4 on desktop */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
           {FOOD_STALLS.map((stall) => (
             <div
               key={stall.id}
@@ -25,12 +25,13 @@ export const FoodFestivalSection: React.FC = () => {
             >
               <div>
                 {/* Stall Photography with Overlay Badge */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-diwali-darker">
+                <div className="relative aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden bg-diwali-darker">
                   <img
                     src={stall.image}
                     alt={stall.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-diwali-card via-black/20 to-transparent" />
                   
@@ -50,26 +51,26 @@ export const FoodFestivalSection: React.FC = () => {
                 </div>
 
                 {/* Content Details */}
-                <div className="p-5 sm:p-6">
+                <div className="p-4 sm:p-6">
                   <span className="text-[10px] uppercase tracking-widest text-diwali-orange font-bold">
                     {stall.tagline}
                   </span>
                   
-                  <h3 className="text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mt-1 mb-2">
+                  <h3 className="text-lg sm:text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mt-1 mb-1.5 sm:mb-2">
                     {stall.name}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-diwali-cream/75 leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm text-diwali-cream/75 leading-relaxed mb-3 sm:mb-4">
                     {stall.description}
                   </p>
 
                   {/* Sample Menu Highlights */}
                   {stall.highlights && (
-                    <div className="flex flex-wrap gap-1.5 pt-2">
+                    <div className="flex flex-wrap gap-1.5 pt-1 sm:pt-2">
                       {stall.highlights.map((item, idx) => (
                         <span
                           key={idx}
-                          className="px-2 py-0.5 rounded-full bg-diwali-maroon/40 border border-diwali-gold/20 text-[11px] text-diwali-cream/90"
+                          className="px-2 py-0.5 rounded-full bg-diwali-maroon/40 border border-diwali-gold/20 text-[10px] sm:text-[11px] text-diwali-cream/90"
                         >
                           • {item}
                         </span>
@@ -80,10 +81,10 @@ export const FoodFestivalSection: React.FC = () => {
               </div>
 
               {/* Bottom Card Footer */}
-              <div className="px-5 sm:px-6 pb-5 pt-0">
-                <div className="pt-3 border-t border-diwali-gold/10 flex items-center justify-between text-xs text-diwali-gold">
+              <div className="px-4 sm:px-6 pb-4 sm:pb-5 pt-0">
+                <div className="pt-2.5 sm:pt-3 border-t border-diwali-gold/10 flex items-center justify-between text-xs text-diwali-gold">
                   <span className="flex items-center space-x-1">
-                    <ChefHat className="w-3.5 h-3.5 text-diwali-orange" />
+                    <ChefHat className="w-3.5 h-3.5 text-diwali-orange shrink-0" />
                     <span className="text-[11px] text-diwali-cream/70">Freshly Prepared</span>
                   </span>
                   <span className="text-[11px] font-semibold text-diwali-gold uppercase">Food Court</span>

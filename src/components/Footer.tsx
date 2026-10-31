@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="relative bg-diwali-darker text-diwali-cream/80 border-t border-diwali-gold/20 pt-16 pb-12 px-4 sm:px-6 lg:px-8">
+    <footer className="relative bg-diwali-darker text-diwali-cream/80 border-t border-diwali-gold/20 pt-16 pb-24 sm:pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
@@ -141,7 +141,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-diwali-gold/15 flex flex-col sm:flex-row items-center justify-between text-xs text-diwali-cream/60 gap-4">
+        <div className="pt-8 border-t border-diwali-gold/15 flex flex-col sm:flex-row items-center justify-between text-xs text-diwali-cream/60 gap-4 text-center sm:text-left">
           <p>
             © {new Date().getFullYear()} Westin College of Hotel & Business Management. All Rights Reserved.
           </p>

@@ -10,6 +10,7 @@ import ScheduleSection from './components/ScheduleSection';
 import RegistrationCtaSection from './components/RegistrationCtaSection';
 import Footer from './components/Footer';
 import InstagramPopup from './components/InstagramPopup';
+import MobileFloatingBar from './components/MobileFloatingBar';
 
 export const App: React.FC = () => {
   return (
@@ -47,6 +48,9 @@ export const App: React.FC = () => {
 
       {/* Section 10 — Footer & Campus Info */}
       <Footer />
+
+      {/* Mobile Floating Quick Registration Bar */}
+      <MobileFloatingBar />
 
       {/* Section 6 of PRD: Instagram Follow Popup */}
       <InstagramPopup />

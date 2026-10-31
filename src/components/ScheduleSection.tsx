@@ -36,13 +36,13 @@ export const ScheduleSection: React.FC = () => {
         />
 
         {/* Timeline Container */}
-        <div className="relative mt-12 sm:mt-16">
+        <div className="relative mt-10 sm:mt-16 overflow-hidden">
           
           {/* Vertical Central Line on Desktop / Left Line on Mobile */}
-          <div className="absolute top-4 bottom-4 left-6 md:left-1/2 w-0.5 md:-translate-x-1/2 bg-gradient-to-b from-diwali-gold/40 via-diwali-orange/60 to-diwali-maroon" />
+          <div className="absolute top-4 bottom-4 left-5 md:left-1/2 w-0.5 md:-translate-x-1/2 bg-gradient-to-b from-diwali-gold/40 via-diwali-orange/60 to-diwali-maroon" />
 
           {/* Timeline Nodes */}
-          <div className="space-y-8 sm:space-y-12">
+          <div className="space-y-6 sm:space-y-12">
             {EVENT_SCHEDULE.map((item, index) => {
               const isEven = index % 2 === 0;
 
@@ -54,23 +54,23 @@ export const ScheduleSection: React.FC = () => {
                   } group`}
                 >
                   
-                  {/* Timeline Content Card */}
-                  <div className="ml-16 md:ml-0 md:w-1/2 md:px-8 w-full">
-                    <div className="diwali-card p-6 rounded-2xl relative border-diwali-gold/25 group-hover:border-diwali-gold/60 transition-all">
+                  {/* Timeline Content Card — responsive width without horizontal margin overflow */}
+                  <div className="pl-12 sm:pl-16 md:pl-0 md:w-1/2 md:px-8 w-full">
+                    <div className="diwali-card p-4 sm:p-6 rounded-2xl relative border-diwali-gold/25 group-hover:border-diwali-gold/60 transition-all">
                       
                       {/* Mobile Time Badge */}
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-diwali-maroon/80 border border-diwali-gold/40 text-xs font-bold text-diwali-gold">
-                          <Clock className="w-3.5 h-3.5 text-diwali-orange" />
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="inline-flex items-center space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-diwali-maroon/80 border border-diwali-gold/40 text-[11px] sm:text-xs font-bold text-diwali-gold shrink-0">
+                          <Clock className="w-3.5 h-3.5 text-diwali-orange shrink-0" />
                           <span>{item.time}</span>
                         </span>
-                        <span className="text-[10px] uppercase font-bold tracking-widest text-diwali-orange/90">
+                        <span className="text-[10px] sm:text-xs uppercase font-bold tracking-widest text-diwali-orange/90 shrink-0">
                           Phase 0{index + 1}
                         </span>
                       </div>
 
                       {/* Activity Title */}
-                      <h3 className="text-lg sm:text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mb-2">
+                      <h3 className="text-base sm:text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mb-1.5 sm:mb-2">
                         {item.activity}
                       </h3>
 
@@ -83,8 +83,8 @@ export const ScheduleSection: React.FC = () => {
                   </div>
 
                   {/* Central Node Diya Marker */}
-                  <div className="absolute left-6 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
-                    <div className="w-11 h-11 rounded-full bg-diwali-card border-2 border-diwali-gold shadow-lg shadow-diwali-orange/30 flex items-center justify-center group-hover:scale-115 transition-transform duration-300">
+                  <div className="absolute left-5 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+                    <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-diwali-card border-2 border-diwali-gold shadow-lg shadow-diwali-orange/30 flex items-center justify-center group-hover:scale-115 transition-transform duration-300">
                       {getIcon(item.icon)}
                     </div>
                   </div>
@@ -100,9 +100,9 @@ export const ScheduleSection: React.FC = () => {
         </div>
 
         {/* Schedule Summary Banner */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-3 px-6 py-3 rounded-full bg-diwali-card/80 border border-diwali-gold/30 text-xs sm:text-sm text-diwali-cream/80 shadow-md">
-            <Flame className="w-4 h-4 text-diwali-orange animate-pulse" />
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="inline-flex items-center space-x-2.5 sm:space-x-3 px-4 py-2.5 sm:px-6 sm:py-3 rounded-full bg-diwali-card/90 border border-diwali-gold/30 text-xs sm:text-sm text-diwali-cream/85 shadow-md max-w-full text-left sm:text-center">
+            <Flame className="w-4 h-4 text-diwali-orange animate-pulse shrink-0" />
             <span>Reporting begins promptly at <strong className="text-diwali-gold">4:30 PM</strong>. Traditional attire is warmly encouraged!</span>
           </div>
         </div>

@@ -33,39 +33,39 @@ export const EntertainmentSection: React.FC = () => {
         />
 
         {/* Entertainment Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
           {SPECIAL_ENTERTAINMENT.map((item) => (
             <div
               key={item.id}
-              className="diwali-card p-6 sm:p-7 rounded-2xl flex flex-col justify-between group hover:border-diwali-gold/50"
+              className="diwali-card p-5 sm:p-7 rounded-2xl flex flex-col justify-between group hover:border-diwali-gold/50"
             >
               <div>
                 {/* Header with Icon & Badge */}
-                <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-diwali-maroon/80 border border-diwali-gold/30 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                <div className="flex items-center justify-between mb-4 sm:mb-5">
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-diwali-maroon/80 border border-diwali-gold/30 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform shrink-0">
                     {getIcon(item.id)}
                   </div>
-                  <span className="px-3 py-1 rounded-full bg-diwali-maroon/50 border border-diwali-gold/30 text-[11px] font-semibold text-diwali-gold uppercase tracking-wider">
+                  <span className="px-2.5 sm:px-3 py-1 rounded-full bg-diwali-maroon/50 border border-diwali-gold/30 text-[10px] sm:text-[11px] font-semibold text-diwali-gold uppercase tracking-wider">
                     {item.badge}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mb-3">
+                <h3 className="text-lg sm:text-xl font-serif font-bold text-diwali-cream group-hover:text-diwali-gold transition-colors mb-2 sm:mb-3">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-diwali-cream/80 leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-diwali-cream/80 leading-relaxed mb-3 sm:mb-4">
                   {item.description}
                 </p>
               </div>
 
               {/* Editable Rules / Announcement Box without invented details */}
-              <div className="pt-4 border-t border-diwali-gold/15">
-                <div className="p-3 rounded-xl bg-diwali-dark/90 border border-diwali-gold/15 text-xs text-diwali-cream/70 flex items-start space-x-2">
+              <div className="pt-3 sm:pt-4 border-t border-diwali-gold/15">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-diwali-dark/90 border border-diwali-gold/15 text-xs text-diwali-cream/70 flex items-start space-x-2">
                   <span className="text-diwali-gold font-bold uppercase tracking-wider shrink-0 text-[10px] mt-0.5">Note:</span>
-                  <span>{item.notes}</span>
+                  <span className="leading-snug">{item.notes}</span>
                 </div>
               </div>
 
