@@ -29,6 +29,7 @@ export const EntrepreneurshipSection: React.FC = () => {
 
   return (
     <section id="student-market" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-diwali-darker border-t border-diwali-border">
+      <div id="student-creators" className="absolute -top-24 pointer-events-none" />
       <div className="max-w-7xl mx-auto">
         
         <SectionTitle

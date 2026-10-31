@@ -5,7 +5,7 @@ import { ExternalLink, Flame, ShieldCheck, Sparkles, CheckCircle2 } from 'lucide
 
 export const RegistrationCtaSection: React.FC = () => {
   return (
-    <section className="relative py-28 px-4 sm:px-6 lg:px-8 bg-diwali-pattern-bg overflow-hidden border-t-2 border-diwali-gold/30">
+    <section id="register" className="relative py-28 px-4 sm:px-6 lg:px-8 bg-diwali-pattern-bg overflow-hidden border-t-2 border-diwali-gold/30">
       
       {/* Background radial glow */}
       <div className="absolute inset-0 diwali-radial-glow pointer-events-none" />

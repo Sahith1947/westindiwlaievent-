@@ -22,8 +22,18 @@ export const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
         
-        {/* Animated Central Diya */}
-        <div className="mb-4 sm:mb-6 animate-subtle-float">
+        {/* Westin Logo Placeholder & Animated Diya */}
+        <div className="flex items-center gap-4 mb-4 sm:mb-6 animate-subtle-float">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white p-2 shadow-xl border-2 border-diwali-gold/60 flex items-center justify-center">
+            <img
+              src="/images/westin-logo.png"
+              alt="Westin College Logo"
+              className="w-full h-full object-contain"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
           <DiyaIcon size="lg" animated={true} />
         </div>
 
